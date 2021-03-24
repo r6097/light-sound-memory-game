@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Light & Sound Memory Game</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>
+      Light & Sound Memory Game
+    </h1>
+    
+    <p>
+      Welcome! Repeat the pattern to win the game. But be careful, the names of the animals are mixed up!
+    </p>
+    
+    <div class="container">
+      <button id="startBtn" onclick="startGame()">
+        Start
+      </button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()">
+        Stop
+      </button>
+      <span>Lives:</span> <span id="lives">3</span>
+    </div>
+    
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1), playAudio(1)"></button>
+      <audio src="https://cdn.glitch.com/6aaaa4ca-0282-4d86-991c-9b7dcc96f872%2Fdog.wav?v=1616554941552" id="dog"></audio>
+      
+      <button id="button2" onclick="guess(2), playAudio(2)" ></button>
+      <audio src="https://cdn.glitch.com/6aaaa4ca-0282-4d86-991c-9b7dcc96f872%2Fmonkey.wav?v=1616554941674" id="monkey"></audio>
+      
+      <button id="button3" onclick="guess(3), playAudio(3)" ></button>
+      <audio src="https://cdn.glitch.com/6aaaa4ca-0282-4d86-991c-9b7dcc96f872%2Ffrog.wav?v=1616554941324" id="frog"></audio>
+      
+      <button id="button4" onclick="guess(4), playAudio(4)"></button>
+      <audio src="https://cdn.glitch.com/6aaaa4ca-0282-4d86-991c-9b7dcc96f872%2Fsheep.wav?v=1616554942091" id="sheep"></audio>
+      
+      <button id="button5" onclick="guess(5), playAudio(5)"></button>
+      <audio src="https://cdn.glitch.com/6aaaa4ca-0282-4d86-991c-9b7dcc96f872%2Fcat.wav?v=1616554941261" id="cat"></audio>
+      
+      <button id="button6" onclick="guess(6), playAudio(6)"></button>
+      <audio src="https://cdn.glitch.com/6aaaa4ca-0282-4d86-991c-9b7dcc96f872%2Fpig.wav?v=1616556976149" id="pig"></audio>
+    </div>
+
+  </body>
+</html>
